@@ -15,10 +15,9 @@ If you created tools to assist in programming in SPL or SSM, please add them her
 
 - SSM
 
-	- Source code: https://github.com/atzedijkstra/ssm
+	- Source code: https://gitlab.science.ru.nl/mlubbers/ssm
 
-		If you find any bugs, please report them there
-	- Documentation: http://www.staff.science.uu.nl/~dijks106/SSM/
+		If you find any bugs, please report them there or fix them and submit a merge request
 - SPL
 
 	- Vim plugin: https://github.com/dopefishh/vim-spl
