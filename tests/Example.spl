@@ -11,7 +11,7 @@ getIndex (idx, list) :: Int [a] -> a
 	while (idx > 0) {
 		list = list.tl;
 	}
-	return list.hd
+	return list.hd;
 }
 
 
