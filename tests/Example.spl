@@ -20,9 +20,9 @@ month(dayOfYear)::Int -> Int{Int tempDay = dayOfYear;Int month = 0;
 
 
 
-
+	
     			 // unuseful comment
-
+	
     while(month < 12)
     {
 						if(tempDay > getIndex(month, dcLengthOfMonth))
