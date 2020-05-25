@@ -11,13 +11,21 @@ reverse (list) :: [t] -> [t] {
 // Calculate the sum of a list of integers
 sum (list) :: [Int] -> Int
 {
-    return list.hd + sum(list.tl);
+    if (isEmpty(list)) {
+        return 0;
+    } else {
+        return list.hd + sum(list.tl);
+    }
 }
 
 // Calculate the product of a list of integers
 product (list) :: [Int] -> Int
 {
-    return list.hd * product(list.tl);
+    if (isEmpty(list)) {
+        return 1;
+    } else {
+        return list.hd * product(list.tl);
+    }
 }
 
 main () :: -> Void
