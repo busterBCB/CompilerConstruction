@@ -12,3 +12,10 @@ flop(n, l)
 {
   return flip(n, 1:l);
 }
+
+rec(a) {
+	return flip(1, []):rec(a);
+}
+
+main() {
+}
