@@ -20,5 +20,9 @@ int main(int argc, char** argv)
 
     Scanner scanner(source, source.length());
 
+    struct Token token = scanner.scan();
+
+    std::cout << token.charStream << std::endl;
+    
     return 0;
 }

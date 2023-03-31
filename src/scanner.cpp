@@ -32,17 +32,25 @@ char Scanner::current(){
     return charStream[position];
 }
 
-TokenType Scanner::scan(){
+Token Scanner::scan(){
     
+
     if(isalpha(current())){
-        
+        int start = position;
+
+        while (isalpha(current()))
+            position++;
+
+        std::size_t length = position - start;
+        std::string_view tokenCharStream = charStream.substr(start, length);
+        return Token{Id, tokenCharStream, start};
     }
 
-    
+
     if(isdigit(current())){
 
     }
 
-    return None;
+    return Token{None, NULL, NULL};
 }
 

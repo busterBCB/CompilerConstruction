@@ -10,6 +10,14 @@ enum TokenType{
     Int, Bool, Var
 };
 
+struct Token
+{
+    TokenType tokenType;
+    std::string_view charStream;
+    int position;
+};
+
+
 class Scanner {
     private:
         int position;
@@ -22,7 +30,7 @@ class Scanner {
 
         Scanner(std::string_view charStream, std::size_t streamLength);
 
-        TokenType scan();
+        Token scan();
 
 
 };
