@@ -21,6 +21,9 @@
 // };
 
 
+
+
+
 Scanner::Scanner(std::string_view charStream, std::size_t streamLength){
     this->position = 0;
     this->charStream = charStream;

@@ -17,7 +17,6 @@ struct Token
     int position;
 };
 
-
 class Scanner {
     private:
         int position;
